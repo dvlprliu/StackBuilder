@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by liuzhuangzhuang01 on 2023/9/7.
 //
@@ -14,4 +14,6 @@ public protocol StackModifier {
     func setAlignment(_ alignment: UIStackView.Alignment) -> Stack
     func setDistribution(_ distribution: UIStackView.Distribution) -> Stack
     func setSpacing(_ spacing: CGFloat) -> Stack
+    func setIsBaselineRelativeArrangement(_ baselineRelative: Bool) -> Stack
+    func setIsLayoutMarginsRelativeArrangement(_ layoutMarginRelative: Bool) -> Stack
 }
