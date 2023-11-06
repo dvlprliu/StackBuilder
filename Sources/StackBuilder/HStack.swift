@@ -20,7 +20,7 @@ final public class HStack: UIStackView {
         self.distribution = distribution
         self.spacing = spacing
         translatesAutoresizingMaskIntoConstraints = false
-        views().forEach { addArrangedSubview($0) }
+        views().forEach(addArrangedSubview(_:))
     }
     
     required init(coder: NSCoder) {
