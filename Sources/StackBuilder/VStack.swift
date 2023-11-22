@@ -50,4 +50,9 @@ extension VStack: StackModifier {
         self.isLayoutMarginsRelativeArrangement = layoutMarginRelative
         return self
     }
+
+    public func setLayoutMargins(_ layoutMargins: UIEdgeInsets) -> VStack {
+        self.layoutMargins = layoutMargins
+        return self
+    }
 }

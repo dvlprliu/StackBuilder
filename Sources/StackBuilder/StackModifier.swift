@@ -16,4 +16,5 @@ public protocol StackModifier {
     func setSpacing(_ spacing: CGFloat) -> Stack
     func setIsBaselineRelativeArrangement(_ baselineRelative: Bool) -> Stack
     func setIsLayoutMarginsRelativeArrangement(_ layoutMarginRelative: Bool) -> Stack
+    func setLayoutMargins(_ layoutMargins: UIEdgeInsets) -> Stack
 }

@@ -37,17 +37,17 @@ extension HStack: StackModifier {
         self.alignment = alignment
         return self
     }
-    
+
     public func setDistribution(_ distribution: UIStackView.Distribution) -> HStack {
         self.distribution = distribution
         return self
     }
-    
+
     public func setSpacing(_ spacing: CGFloat) -> HStack {
         self.spacing = spacing
         return self
     }
-    
+
     public func setIsBaselineRelativeArrangement(_ baselineRelative: Bool) -> HStack {
         self.isBaselineRelativeArrangement = baselineRelative
         return self
@@ -55,6 +55,11 @@ extension HStack: StackModifier {
 
     public func setIsLayoutMarginsRelativeArrangement(_ layoutMarginRelative: Bool) -> HStack {
         self.isLayoutMarginsRelativeArrangement = layoutMarginRelative
+        return self
+    }
+
+    public func setLayoutMargins(_ layoutMargins: UIEdgeInsets) -> HStack {
+        self.layoutMargins = layoutMargins
         return self
     }
 }
